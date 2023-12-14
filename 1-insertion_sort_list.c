@@ -52,12 +52,12 @@ void swap_node(listint_t **list, listint_t *node, listint_t *node_two)
 */
 void insertion_sort_list(listint_t **list)
 {
+    listint_t *current, *insert;
+
     if (list == NULL || *list == NULL)
     {
         return;
     }
-
-    listint_t *current, *insert;
 
     current = (*list)->next;
 
